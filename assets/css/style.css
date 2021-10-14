@@ -1,0 +1,158 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#header {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 10;
+}
+
+.header__logo {
+    display: inline-block;
+}
+
+.header__logo--link {
+    text-decoration: none;
+}
+
+.header__logo--link > img {
+    width: 100px;
+    height: 80px;
+}
+
+.header__navbar {
+    display: inline-block;
+    float: right;
+}
+
+.navbar__list-items {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__item {
+    
+}
+
+.navbar__item--link {
+    text-decoration: none;
+    margin: 20px 30px;
+    display: block;
+    font-size: 1.4rem;
+    color: #fff;
+    position: relative;
+}
+
+.navbar__item--link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: #6dd2d9;
+    transition: width linear 0.2s;
+    bottom: -6px;
+    left: 0;
+    border-radius: 3px;
+}
+
+.navbar__item--link:hover::after {
+    width: 100%;
+}
+
+#slider {
+    background: url(../img/slide/background_slider.jpg) top center / cover no-repeat;
+    position: relative;
+    padding-top: 50%;
+}
+
+.slider__content {
+    position: absolute;
+    text-align: center;
+    bottom: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider__text--content {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.slider__text--heading {
+    font-size: 6rem;
+    padding: 20px 0;
+}
+
+.slider__text--description {
+    font-size: 2rem;
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.slider__search {
+    
+}
+
+.slider__search--btn {
+    background-color: #fff;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.slider__search--btn > i {
+    font-size: 1.4rem;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.slider__search--btn > input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    outline: none;
+    font-size: 1.6rem;
+}
+
+.slider__topic {
+
+}
+
+.slider__topic--relax {
+
+}
+
+.slider__topic--link {
+
+}
+
+.slider__topic--icon {
+
+}
+
+
