@@ -12,39 +12,65 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div id="main">
         <div id="header">
             <div class="grid wide">
-                <div class="header__logo">
-                    <a href="#" class="header__logo--link">
-                        <img src="./assets/img/header/logo.png" alt="">
-                    </a>
+                <div class="header__content">
+                    <div class="header__logo">
+                        <a href="#" class="header__logo--link">
+                            <img src="./assets/img/header/logo.png" alt="">
+                        </a>
+                    </div>
+            
+                    <div class="header__navbar">
+                        <ul class="navbar__list-items">
+                            <li class="navbar__item book-btn">
+                                <a href="#" class="navbar__item--link book-btn">Book now</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item--link">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item--link">Destination</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item--link">Shop</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__item--link">About us</a>
+                            </li>
+                            <li class="navbar__item">
+                                <span class="navbar__item--link">Contact</span>
+                                <ul class="subnav__list">
+                                    <li class="subnav__item">
+                                        <a href="#" class="subnav__item--link">Email</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="#" class="subnav__item--link">Hotline</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="#" class="subnav__item--link">Fanpage</a>
+                                    </li>
+                                    <li class="subnav__item">
+                                        <a href="#" class="subnav__item--link">Youtube</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    
                 </div>
-        
-                <div class="header__navbar">
-                    <ul class="navbar__list-items">
-                        <li class="navbar__item">
-                            <a href="" class="navbar__item--link">Home</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__item--link">Destination</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__item--link">Shop</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__item--link">About us</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__item--link">Contact</a>
-                        </li>
-                        <li class="navbar__item book-btn">
-                            <a href="" class="navbar__item--link book-btn">Book now</a>
-                        </li>
-                    </ul>
+
+                <div id="header__menu--mobile">
+                    <i class="fas fa-bars menu-mobile--icon"></i>
                 </div>
+
+                
             </div>
         </div>
     
@@ -131,6 +157,38 @@
         </div>
 
     </div>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('header__menu--mobile');
+        var headerHeight = header.clientHeight;
+        
+        //đóng mở mobile-menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if(isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        //tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('.header__navbar li a[href*="#"]');
+        // console.log(menuItems)
+        for (var i = 0; i < menuItems.length - 1; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (!isParentMenu) {
+                    header.style.height = null;
+                } else {
+                    event.preventDefault();
+                }
+            }
+        }
+    </script>
     
 </body>
 </html>

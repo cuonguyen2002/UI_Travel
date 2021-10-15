@@ -18,10 +18,15 @@ html {
 #header {
     height: 80px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
     position: fixed;
     z-index: 10;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__logo {
@@ -38,19 +43,19 @@ html {
 }
 
 .header__navbar {
-    display: inline-block;
-    float: right;
+    /* display: inline-block; */
+    /* float: right; */
 }
 
 .navbar__list-items {
     list-style: none;
     display: flex;
-    height: 80px;
     align-items: center;
+    padding: 12px 0;
 }
 
 .navbar__item {
-    
+    position: relative;
 }
 
 .navbar__item--link {
@@ -62,6 +67,7 @@ html {
     color: #fff;
     position: relative;
     font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .navbar__item--link:not(.book-btn)::after {
@@ -75,6 +81,46 @@ html {
     left: 0;
     border-radius: 3px;
 }
+
+.subnav__list {
+    position: absolute;
+    list-style: none;
+    left: 10px;
+    top: calc(100% + 12px);
+    display: none;
+    text-transform: initial;
+}
+
+.navbar__item:hover .subnav__list {
+    display: block;
+}
+
+.subnav__list::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: -20px;
+    left: 0;
+}
+
+.subnav__item {
+
+}
+
+.subnav__item--link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    font-size: 1.4rem;
+}
+
+.subnav__item--link:hover {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
 
 .book-btn {
     background-color: var(--primary-color);
@@ -233,3 +279,8 @@ html {
 }
 
 
+#container {
+    height: 2000px;
+    width: 100%;
+    background-color: red;
+}
