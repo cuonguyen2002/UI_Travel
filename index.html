@@ -11,6 +11,7 @@
     <title>Travel</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
 </head>
 <body>
     <div id="main">
@@ -39,8 +40,8 @@
                         <li class="navbar__item">
                             <a href="" class="navbar__item--link">Contact</a>
                         </li>
-                        <li class="navbar__item">
-                            <a href="" class="navbar__item--link">Book now</a>
+                        <li class="navbar__item book-btn">
+                            <a href="" class="navbar__item--link book-btn">Book now</a>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +51,7 @@
         <div id="slider">
             <div class="slider__content">
                 <div class="slider__text--content">
-                    <h1 class="slider__text--heading">Hãy tìm một kỳ nghỉ cho bạn</h1>
+                    <h1 class="slider__text--heading">Khám phá Việt Nam</h1>
                     <h6 class="slider__text--description">Xem các khuyến mãi của chúng tôi</h6>
                 </div>
 
@@ -58,34 +59,65 @@
                     <div class="slider__search--btn">
                         <i class="fas fa-search"></i>
                         <input type="text" placeholder="Nhập địa điểm hoặc thể loại">
+
+                        <ul class="search__history--list">
+                            <li class="search__history--item">
+                                <i class="fas fa-history search__history--icon"></i>
+                                lăng Bác
+                            </li>
+                            <li class="search__history--item">
+                                <i class="fas fa-history search__history--icon"></i>
+                                vịnh hạ long
+                            </li>
+                            <li class="search__history--item">
+                                <i class="fas fa-history search__history--icon"></i>
+                                hang sơn đoòng
+                            </li>
+                            <li class="search__history--item">
+                                <i class="fas fa-history search__history--icon"></i>
+                                fanxipang
+                            </li>
+                            <li class="search__history--item">
+                                <i class="fas fa-history search__history--icon"></i>
+                                trường đại học kiến trúc :D
+                            </li>
+                        </ul>
                     </div>
+
+                    <!-- <div class="slider__search--history">
+                        <ul class="search__history--list">
+                            <li class="search__history--item">lăng Bác</li>
+                            <li class="search__history--item">vịnh hạ long</li>
+                            <li class="search__history--item">hang sơn đoòng</li>
+                        </ul>
+                    </div> -->
                 </div>
 
                 <div class="slider__topic">
-                    <div class="slider__topic--relax">
-                        <a href="#" class="slider__topic--link">
+                    <a href="#" class="slider__topic--link">
+                        <div class="slider__topic--item">
                             <i class="fas fa-glass-cheers slider__topic--icon"></i>
-                            <span>Giải trí</span>
-                        </a>
-                    </div>
-                    <div class="slider__topic--relax">
-                        <a href="#" class="slider__topic--link">
+                            <span class="slider__topic--title">Giải trí</span>
+                        </div>
+                    </a>
+                    <a href="#" class="slider__topic--link">
+                        <div class="slider__topic--item">
                             <i class="fas fa-landmark slider__topic--icon"></i>
-                            <span>Lịch Sử</span>
-                        </a>
-                    </div>
-                    <div class="slider__topic--relax">
-                        <a href="#" class="slider__topic--link">
+                            <span class="slider__topic--title">Lịch Sử</span>
+                        </div>
+                    </a>
+                    <a href="#" class="slider__topic--link">
+                        <div class="slider__topic--item">
                             <i class="fas fa-leaf slider__topic--icon"></i>
-                            <span>Thiên nhiên</span>
-                        </a>
-                    </div>
-                    <div class="slider__topic--relax">
-                        <a href="#" class="slider__topic--link">
-                            <i class="fas fa-laptop-house slider__topic--icon"></i>
-                            <span>Hiện đại</span>
-                        </a>
-                    </div>
+                            <span class="slider__topic--title">Thiên nhiên</span>
+                        </div>
+                    </a>
+                    <a href="#" class="slider__topic--link">
+                        <div class="slider__topic--item">
+                            <i class="far fa-building slider__topic--icon"></i>
+                            <span class="slider__topic--title">Hiện đại</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
