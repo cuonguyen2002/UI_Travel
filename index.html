@@ -9,15 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.css">
     <title>Travel</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div id="main">
         <div id="header">
-            <div class="grid wide">
+            <div class="grid wide col">
                 <div class="header__content">
                     <div class="header__logo">
                         <a href="#" class="header__logo--link">
@@ -34,7 +34,7 @@
                                 <a href="#" class="navbar__item--link">Home</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#" class="navbar__item--link">Destination</a>
+                                <a href="#container" class="navbar__item--link">Destination</a>
                             </li>
                             <li class="navbar__item">
                                 <a href="#" class="navbar__item--link">Shop</a>
@@ -81,8 +81,8 @@
                     <h6 class="slider__text--description">Xem các khuyến mãi của chúng tôi</h6>
                 </div>
 
-                <div class="slider__search">
-                    <div class="slider__search--btn">
+                <div class="slider__search col">
+                    <div class="slider__search--btn s-12">
                         <i class="fas fa-search"></i>
                         <input type="text" placeholder="Nhập địa điểm hoặc thể loại">
 
@@ -109,14 +109,6 @@
                             </li>
                         </ul>
                     </div>
-
-                    <!-- <div class="slider__search--history">
-                        <ul class="search__history--list">
-                            <li class="search__history--item">lăng Bác</li>
-                            <li class="search__history--item">vịnh hạ long</li>
-                            <li class="search__history--item">hang sơn đoòng</li>
-                        </ul>
-                    </div> -->
                 </div>
 
                 <div class="slider__topic">
@@ -149,7 +141,190 @@
         </div>
     
         <div id="container">
-    
+            <div class="container__title">
+                <p class="container__title--heading">OUR PROPOSALS</p>
+                <h3 class="container__title--des">OUR DESTINATIONS</h3>
+            </div>
+
+            <div class="grid wide col">
+                <div class="row">
+                    <div class="col l-4 m-6 s-12">
+                        <a href="#" class="container__destination--item">
+                            <div class="destination__img" style="background-image: url(../assets/img/destination/tham-quan-quang-truong-ba-dinh-ghe-tham-lang-bac.jpg);">
+                            </div>
+                            
+                            <div class="destination__text">
+                                <h3 class="destination__heading">Hà Nội</h3>
+                                <p class="destination__description">Thủ đô ngàn năm văn hiến</p>
+                            </div>
+
+                            <div class="destination__info--hover">
+                                <span class="destination__info-btn">Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <a href="#" class="container__destination--item">
+                            <div class="destination__img" style="background-image: url(../assets/img/destination/Cau-tran-thi-ly-da-nang.jpg);">
+                            </div>
+                            
+                            <div class="destination__text">
+                                <h3 class="destination__heading">Đà Nẵng</h3>
+                                <p class="destination__description">Thành phố đáng sống</p>
+                            </div>
+
+                            <div class="destination__info--hover">
+                                <span class="destination__info-btn">Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <a href="#" class="container__destination--item">
+                            <div class="destination__img" style="background-image: url(../assets/img/destination/chua-thien-mu-nhin-tu-tren-cao-1.jpg);">
+                            </div>
+                            
+                            <div class="destination__text">
+                                <h3 class="destination__heading">Thừa Thiên Huế</h3>
+                                <p class="destination__description">Văn hóa và du lịch</p>
+                            </div>
+
+                            <div class="destination__info--hover">
+                                <span class="destination__info-btn">Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <a href="#" class="container__destination--item">
+                            <div class="destination__img" style="background-image: url(../assets/img/destination/Toi-sapa-chiem-nguong-ve-dep-an-tuong-cua-nhung-thua-ruong-bac-thang-1.jpg);">
+                            </div>
+                            
+                            <div class="destination__text">
+                                <h3 class="destination__heading">Sapa</h3>
+                                <p class="destination__description">Nóc nhà Đông Dương</p>
+                            </div>
+
+                            <div class="destination__info--hover">
+                                <span class="destination__info-btn">Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <a href="#" class="container__destination--item">
+                            <div class="destination__img" style="background-image: url(../assets/img/destination/vinh-ha-long-la-diem-du-lic-viet-nam-thu-hut-du-khach-trong-va-ngoai-nuoc.jpg);">
+                            </div>
+                            
+                            <div class="destination__text">
+                                <h3 class="destination__heading">Hạ Long</h3>
+                                <p class="destination__description">Một trong bảy kì quan thiên nhiên Thế Giới</p>
+                            </div>
+
+                            <div class="destination__info--hover">
+                                <span class="destination__info-btn">Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <a href="#" class="container__destination--item">
+                            <div class="destination__img" style="background-image: url(../assets/img/destination/Nha-Trang.jpg);">
+                            </div>
+                            
+                            <div class="destination__text">
+                                <h3 class="destination__heading">Nha Trang</h3>
+                                <p class="destination__description">Hòn ngọc Biển Đông</p>
+                            </div>
+
+                            <div class="destination__info--hover">
+                                <span class="destination__info-btn">Xem chi tiết</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__seperate">
+                <div class="container__seperate-content row">
+                    <div class="seperate__content--text">
+                        <h1>Kì nghỉ của bạn</h1>
+                    </div>
+
+                    <div class="seperate__content--package">
+                        <a href="#" class="seperate__package--link">Xem tất cả</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__promotions">
+                <div class="promotions__title">
+                    <p class="promotions__heading">OUR PROMOTIONS</p>
+                    <h3 class="promotions__des">Các gói khuyến mãi</h3>
+                </div>
+                
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-6 s-12">
+                            <div href="#" class="promotion__item">
+                                <div class="promotion__item-img" style="background-image: url(./assets/img/promotions/unnamed.jpg);">
+                                </div>
+                                <div class="promotion__item-address">
+                                    <h1 class="address__heading">Văn Miếu Quốc Tử Giám</h1>
+                                    <h3 class="address__city">Hà Nội</h3>
+                                </div>
+                                <div class="promotion__item-price">
+                                    <h1 class="price__title">Giá khuyến mãi</h1>
+                                    <h1 class="price__value">3.999.000 VNĐ</h1>
+                                </div>
+                                <div class="promotion__item-des">
+                                    <p class="promotion__description">Văn Miếu – Quốc Tử Giám là quần thể di tích đa dạng và phong phú hàng đầu của thành phố Hà Nội, nằm ở phía Nam kinh thành Thăng Long.</p>
+                                </div>
+                                <div class="promotion__item-details">
+                                    <a href="#" class="promotion__details--btn">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 s-12">
+                            <div href="#" class="promotion__item">
+                                <div class="promotion__item-img" style="background-image: url(./assets/img/promotions/1548127579_chinh-phuc-dinh-fansifan-1.jpg);">
+                                </div>
+                                <div class="promotion__item-address">
+                                    <h1 class="address__heading">Fansipan</h1>
+                                    <h3 class="address__city">Lào Cai, Lai Châu</h3>
+                                </div>
+                                <div class="promotion__item-price">
+                                    <h1 class="price__title">Giá khuyến mãi</h1>
+                                    <h1 class="price__value">12.999.000</h1>
+                                </div>
+                                <div class="promotion__item-des">
+                                    <p class="promotion__description">Fansipan là ngọn núi cao nhất ba nước Đông Dương nên được mệnh danh là "Nóc nhà Đông Dương" thuộc dãy núi Hoàng Liên Sơn</p>
+                                </div>
+                                <div class="promotion__item-details">
+                                    <a href="#" class="promotion__details--btn">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 s-12">
+                            <div href="#" class="promotion__item">
+                                <div class="promotion__item-img" style="background-image: url(./assets/img/promotions/1474541364_bai-dai-phu-quoc.jpg);">
+                                </div>
+                                <div class="promotion__item-address">
+                                    <h1 class="address__heading">Đảo Phú Quốc</h1>
+                                    <h3 class="address__city">Kiên Giang</h3>
+                                </div>
+                                <div class="promotion__item-price">
+                                    <h1 class="price__title">Giá khuyến mãi</h1>
+                                    <h1 class="price__value">19.999.000 VNĐ</h1>
+                                </div>
+                                <div class="promotion__item-des">
+                                    <p class="promotion__description">Phú Quốc là hòn đảo lớn nhất Việt Nam, nằm trong vịnh Thái Lan. Thuộc thành thành phố Phú Quốc thuộc tỉnh Kiên Giang.</p>
+                                </div>
+                                <div class="promotion__item-details">
+                                    <a href="#" class="promotion__details--btn">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
         </div>
     
         <div id="footer">

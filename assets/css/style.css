@@ -21,7 +21,7 @@ html {
     background-color: rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
     position: fixed;
-    z-index: 10;
+    z-index: 11;
 }
 
 .header__content {
@@ -279,8 +279,231 @@ html {
 }
 
 
-#container {
-    height: 2000px;
+#container { 
+
+}
+
+.container__title {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container__title--heading {
+    opacity: 0.6;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    padding: 10px 0;
+}
+
+.container__title--des {
+    font-size: 3rem;
+    padding: 10px 0;
+    color: var(--primary-color);
+}
+
+.container__destinations--list {
+
+}
+
+.container__destination--item {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    transform: scale(1, 1);
+    transition: all 0.6s ease-out;
+    border-radius: 10px;
+}
+
+.destination__img {
+    padding-top: 66%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.destination__text {
+    position: absolute;
+    bottom: 14px;
+    left: 10px;
+    color: #fff;
+}
+
+.destination__heading {
+    font-size: 2rem;
+}
+
+.destination__description {
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+.destination__info--hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: var(--primary-color--rgba);
+    display: none;
+    padding: 10px 0;
+}
+
+.container__destination--item:hover {
+    transform: scale(1.04, 1.04);
+}
+
+.container__destination--item:hover .destination__info--hover {
+    display: flex;
+}
+
+.destination__info-btn {
+    margin: auto;
+    border: 14px solid #fff;
+    border-radius: 4px;
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.container__seperate {
+    margin: 100px 0;
     width: 100%;
-    background-color: red;
+    height: 200px;
+    background-image: url(../img/seperate/hinh-anh-bai-bien-xanh_014557305.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.container__seperate-content {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.seperate__content--text h1 {
+    color: #fff;
+    font-size: 5rem;
+    line-height: 1.2;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.seperate__content--package {
+    margin: 0 60px;
+}
+
+.seperate__package--link {
+    text-decoration: none;
+    font-size: 1.6rem;  
+    color: var(--primary-color);
+    background-color: #fff;
+    padding: 10px 100px;
+    border-radius: 20px;
+}
+
+.container__promotions {
+
+}
+
+.promotions__title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.promotions__heading {
+    opacity: 0.6;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    padding: 10px 0;
+}
+
+.promotions__des {
+    font-size: 3rem;
+    padding: 10px 0;
+    color: var(--primary-color);
+}
+
+.promotion__item {
+    position: relative;
+    display: block;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.062);
+}
+
+.promotion__item-img {
+    padding-top: 63%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.promotion__item-address {
+    margin: 0 16px;
+    padding-top: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.062);
+}
+
+.address__heading {
+    color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+.address__city {
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 10px;
+}
+
+.promotion__item-price {
+    margin: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.062);
+}
+
+.price__title {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.price__value {
+    color: var(--primary-color);
+}
+
+
+.promotion__item-des {
+    margin: 0 16px;
+}
+
+.promotion__description {
+    padding: 20px 0;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+}
+
+.promotion__item-details {
+    margin: 0 16px;
+    padding: 20px 0;
+}
+
+.promotion__details--btn {
+    padding: 6px 12px;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+#footer {
+    width: 100%;
+    height: 300px;
 }

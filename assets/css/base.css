@@ -1,8 +1,10 @@
 :root {
     --primary-color: #6dd2d9;
+    --primary-color--rgba: #6dd2d9cc;
 }
 
 .dis-flex-between {
     display: flex;
     justify-content: space-between;
 }
+
