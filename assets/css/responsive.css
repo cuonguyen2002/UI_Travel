@@ -93,6 +93,14 @@
         font-size: 1.4rem;
     }
 
+    .footer__contact {
+        display: none;
+    }
+
+    .footer__info {
+        display: none;
+    }
+
     
 }
 
